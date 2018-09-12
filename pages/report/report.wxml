@@ -1,0 +1,23 @@
+<!--pages/report/report.wxml-->
+<view class='container' bindscrolltolower="onReachBottom">
+   <navigator class='report-item' url='/pages/reportDetails/reportDetails?id={{item.XSBH}}' wx:for='{{reportList}}' wx:key='{{index}}'>
+     <view class='clearfix'style="margin-bottom:10rpx;">
+       <!--条件渲染  -->
+      <view wx:if="{{item.XSLB =='环境保护'}}" class='report-type1'>{{item.XSLB}}</view>
+      <view wx:elif="{{item.XSLB =='食药安全'}}" class='report-type2'>{{item.XSLB}}</view>
+      <view wx:elif="{{item.XSLB =='国土资源'}}" class='report-type3'>{{item.XSLB}}</view>
+      <view wx:elif="{{item.XSLB =='国有财产'}}" class='report-type4'>{{item.XSLB}}</view>
+      <view wx:elif="{{item.XSLB =='英烈保护'}}" class='report-type5'>{{item.XSLB}}</view>
+      <view wx:else class='report-type6'>{{item.XSLB}}</view>
+      <view class='report-time'>{{item.CJSJ}}</view>
+      <view class='report-location'><view class='olabel'>事发地点 :</view> {{item.SFDD}}</view>
+     </view>
+
+     <view class='report-content'><view class='olabel'>举报内容 :</view>{{item.JBNR}}</view>
+   </navigator>
+ 
+  <view wx:if="{{noData}}" class='nodata'><image src='/images/index/nodata.png'></image></view> 
+
+  <view wx:if="{{isLoadData}}" style='text-align:center;'>加载中..</view>
+  <view wx:if="{{noMore}}" style='text-align:center;'>没有更多举报</view>
+</view >

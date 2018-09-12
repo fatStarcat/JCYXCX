@@ -1,0 +1,88 @@
+<!--pages/reportEntry/reportEntry.wxml-->
+
+<view class='container'>
+
+ <view id='report-form' >
+  <view class='input-group'>
+    <view class='must'>*</view>
+      <view class='weui-cell__hd'>
+        <label class="weui-label">所属领域:</label>
+      </view>
+      <view class='weui-cell__bd' style='padding-right:50rpx; padding-left:30rpx;'>
+           <image bindtap='toReortNote' class='reportNote-icon' src='/images/index/shuoming.png'></image>
+       <picker bindchange="bindPickerChange"  value="{{index}}" range="{{reportTypeList}}">
+       <image class='more-icon' src='/images/reportEntry/more.png'></image> 
+      </picker>
+       <input style='width:100%' bindinput ="reportTypeInput" class="weui-input" value='{{reportType}}'>
+        
+      </input>
+    </view>
+ 
+  </view>
+   <view class='input-group'>
+      <view class='weui-cell__hd'>
+        <label class="weui-label">事发地点:</label>
+      </view>
+      <view class="weui-cell__bd " style='padding-left:30rpx;'>
+        <image bindtap='getLocation' class='location-icon' src='/images/reportEntry/location.png'></image>
+        <input class="weui-input" indinput ="locationInput" placeholder='注：地址中请包含城市名称' value='{{location}}'/>
+      </view>
+  </view>
+    <view class='input-group'>
+      <view class='weui-cell__hd'>
+        <label class="weui-label" >举报人姓名:</label>
+      </view>
+      <view class="weui-cell__bd ">
+        <input class="weui-input" bindinput ="nameInput"  value='{{userName}}'/>
+      </view>
+  </view>
+   <view class='input-group'>
+      <view class='weui-cell__hd'>
+        <label class="weui-label">联系方式:</label>
+      </view>
+      <view class="weui-cell__bd ">
+        <input class="weui-input" bindinput='contactInput' value='{{contactInfo}}'/>
+      </view>
+  </view> 
+  <!--举报内容  -->
+  <view class='report-content'>
+    <view class='must'>*</view>
+    <view class='title'>举报内容</view>
+     <view >
+     <textarea class='report-text' value='{{reportContent}}' bindinput='reportContentInput' maxlength='-1' placeholder='请输入你想要举报的内容...' />
+     </view>
+ 
+  </view>
+  <!--举报材料-->
+  <view class='report-resources clearfix'>
+     <view class='title'>照片/视频</view>
+        <view class='camera-func' bindtap='cameraEvent' wx:if="{{(imgs.length + videos.length)== 0}}"> 
+          <image class='camera-icon' src='/images/reportEntry/camera.png'></image>
+          <view class='describe'  >图片/视频</view>
+        </view>
+
+      <view class='camera-right'>
+        <view class='videowrap' wx:for='{{videos}}' wx:key="{{index}}">
+            <video id="video{{index}}" class='sendVideo' show-center-play-btn bindplay="videoEvent" data-index="{{index}}" src='{{item}}'>
+            </video>
+            <view class='delete-btn' catchtap="deleteVideo" data-index="{{index}}">
+            <image class='delete-icon' src='/images/reportEntry/delete.png'></image>
+            </view>
+        </view> 
+        <view class='imgswrap' wx:for="{{imgs}}" wx:key="{{index}}">
+         <image class='sendImg' src="{{item}}" data-index="{{index}}" mode="aspectFill" catchtap="previewImg"  ></image> 
+         <view class="delete-btn" data-index="{{index}}" catchtap="deleteImg"><image class='delete-icon' src='/images/reportEntry/delete.png'></image>
+         </view>
+      
+     </view>
+      <view class='addImgs' wx:if="{{(imgs.length + videos.length) != 0 && (imgs.length + videos.length) < 12}}" >
+        <image class='add-btn' bindtap='cameraEvent' src='/images/reportEntry/add-btn.png'>
+        </image>
+     </view>
+     <!--视频  -->
+        
+      </view>
+  </view>
+ </view>
+  <button id='send-btn' bindtap='sendEvent' disabled='{{isSend}}' hover-class>发送</button>
+</view>

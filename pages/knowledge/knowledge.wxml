@@ -1,0 +1,40 @@
+<!--index.wxml-->
+<view class='container' bindscrolltolower="onReachBottom">
+  <view class='main' >
+    <view  catchtap='knowledgeDetails' wx:for="{{list}}"  wx:key="{{index}}" data-id='{{item.BH}}' wx:if="{{item.NR}}">
+    <view class='knowledge-item' >
+      <view class='konwledge-title'>{{item.BT}}</view>
+      <view class='knowledge-content'>
+      {{item.NR}}
+      </view>
+      <view class='knowledge-time'>
+      {{item.FBSJ}}
+      </view>
+      <view class="{{item.SSLB=='理论研究'?'knowledge-type1':'knowledge-type2'}}">{{item.SSLB}}</view>
+    </view>
+    </view>
+  <view class='report-entry' animation="{{animationData}}" >
+    <view class='entry-title'></view>
+    <text class='entry-title-text'>举报<br />入口</text>
+      <scroll-view scroll-x="true" class="report-entry-wrap">
+        <view class='report-entry-item' wx:for="{{entryList}}" wx:key="{{index}}" bindtap="reportEntry" data-oType='{{index}}'>
+          <image src="{{item.imgsrc}}"></image>
+          <text>{{item.text}}</text>
+        </view>
+      </scroll-view>
+    </view>
+    <!--举报入口隐藏或者显示按钮  -->
+    <view class='entry-btn' bindtap='entryShow'>
+      <view class='circle'></view>
+      <view class='circle'></view>
+      <view class='circle'></view>
+    </view>
+  </view>
+    <!--没有内容显示得图片  -->
+   <view wx:if="{{noData || list.length == 0}}" class='nodata'><image src='/images/index/nodata.png'></image></view> 
+  <!--上拉加载提示  -->
+  <view wx:if="{{isLoadData}}" style='text-align:center;'>加载中..</view>
+  <view wx:if="{{noMore}}" style='text-align:center;'>没有更多知识</view>
+  <!-- 举报说明 -->
+  
+</view>

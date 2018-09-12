@@ -1,0 +1,282 @@
+/**index.wxss**/
+.main{
+  padding: 15rpx 24rpx;
+}
+.trends-wrap ,
+.trends-wrap2{
+  position: relative;
+  box-sizing: border-box;
+  margin-bottom: 16rpx;
+  height: 240rpx;
+  background: #FFFFFF;
+  border-radius:10px;
+  box-shadow:2px 0px 6px rgba(88,88,88,0.14);
+}
+
+.trends-wrap{
+   padding: 10rpx 36rpx 10rpx 10rpx;
+}
+
+.trends-wrap2{
+  padding: 14rpx 36rpx 15rpx 25rpx;
+}
+
+.trends-wrap .trends-img{
+  float: left;
+  margin-right: 34rpx;
+  width: 251rpx;
+  height: 202rpx;
+  border-radius: 10px;
+}
+
+.trends-wrap .trends-content{
+  width: 368rpx;
+  float: left;
+}
+
+.trends-wrap .trends-content .trends-title{
+  margin-bottom:14rpx;
+  width:368rpx;
+  max-height:65px;
+  color:#333333;
+  font-size:34rpx;
+  line-height:36rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+
+}
+
+.trends-wrap .trends-content .trends-text{
+  font-size: 28rpx;
+  line-height: 32rpx;
+  height: 128rpx;
+  text-indent:44rpx;
+  color: #3E3E3E;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display:-webkit-box; 
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:3; 
+}
+
+.trends-wrap .trends-bottom{
+  position: relative;
+  line-height: 34rpx;
+}
+
+.trends-wrap .trends-bottom .trends-time{
+  font-size:18rpx;
+  color:#38649D;
+  display:inline-block;
+}
+
+.trends-wrap .trends-bottom .hot{
+  position: absolute;
+  display: block;
+  width:24rpx;
+  height:24rpx;
+  right:100rpx;
+  top:14rpx;
+}
+
+.trends-wrap .trends-bottom .trends-tag{
+ position:absolute;
+  right:0;
+  top:14rpx;
+  width:80rpx;
+  height:22rpx;
+  font-size:16rpx;
+  color:#38649D;
+  border-radius:5rpx;
+  line-height:20rpx;
+  border:1rpx solid #38649D;
+  text-align:center;
+}
+
+.trends-wrap2 .trends-content{
+  width: 100%;
+}
+
+.trends-wrap2 .trends-content .trends-title{
+  vertical-align: middle;
+  margin-bottom: 16rpx;
+  max-width: 586rpx;
+  height: 36rpx;
+  color: #333333;
+  font-size: 34rpx;
+  line-height: 36rpx;
+   overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-inline-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:1;
+}
+
+.trends-wrap2 .trends-content .big-hot{
+  width: 40rpx;
+  height: 40rpx;
+  vertical-align: -3rpx;
+  margin-right: 16rpx;
+}
+
+.trends-wrap2 .trends-content .trends-text{
+    margin-bottom: 10rpx;
+    font-size: 28rpx;
+    height: 128rpx;
+    line-height: 33rpx;
+    text-indent: 2em;
+    color: #3E3E3E;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display:-webkit-box; 
+    -webkit-box-orient:vertical;
+    -webkit-line-clamp:4;
+}
+
+.trends-wrap2 .trends-bottom{
+  position: absolute;
+  line-height: 22rpx;
+  left: 25rpx;
+  bottom: 8rpx;
+}
+
+.trends-wrap2 .trends-bottom .trends-time{
+  font-size:22rpx;
+  color:#38649D;
+  display:inline-block;
+}
+
+.trends-wrap2 .trends-bottom .trends-tag{
+ position:absolute;
+  right:0;
+  top:8rpx;
+  width:80rpx;
+  height:22rpx;
+  font-size:16rpx;
+  color:#38649D;
+  border-radius:5rpx;
+  line-height:22rpx;
+  border:1rpx solid #38649D;
+  text-align:center;
+}
+
+/* 举报入口 */
+.report-entry{
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 150rpx;
+  box-sizing: border-box;
+}
+
+
+.report-entry .report-entry-wrap{
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background: #FFFFFF;
+  z-index: 2;
+  padding: 26rpx 0;
+  white-space: nowrap;
+  overflow-x: auto;
+}
+.report-entry .entry-title-text{
+  position: absolute;
+  left:12rpx;
+  top:7rpx;
+  font-size:14rpx;
+  color:#FFFFFF;
+  z-index:10;
+  width:45rpx;
+  letter-spacing:6rpx;
+
+}
+
+.report-entry .report-entry-wrap::after{
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 0;
+  display: block;
+  border: 50rpx solid #124C97 ; 
+  border-color: #124C97 transparent transparent #124C97;
+}
+
+.report-entry-item{
+  display: inline-block;
+  width: 100rpx;
+  text-align: center;
+  margin-right: 74rpx;
+}
+.report-entry-item:first-child{
+  margin-left: 64rpx;
+}
+
+.report-entry-item image{
+  width: 58rpx;
+  height: 58rpx;
+}
+
+.report-entry-item text{
+  display: block;
+  font-size: 24rpx;
+  color: #292929;
+  line-height: 24rpx;
+  letter-spacing: 2rpx;
+}
+
+.entry-btn{
+  position: fixed;
+  z-index: 999;
+  bottom: 38rpx;
+  right: 0;
+  padding-top: 13rpx;
+  width: 42rpx;
+  height: 72rpx;
+  border-radius: 10rpx 0 0 10rpx;
+  background: #124C97;
+  box-sizing: border-box;
+}
+
+.entry-btn .circle{
+  width: 10rpx;
+  height: 10rpx;
+  border-radius: 50%;
+  background: #FFFFFF;
+  margin: 0 auto 8rpx;
+}
+
+.entry-btn .circle:last-child{
+   margin-bottom: 0;
+}
+
+/* 举报说明 */
+#reportNote{
+  position: fixed;
+  right: 0;
+  top: 20rpx;
+  display: flex;
+  height: 40rpx;
+  background: #124C97;
+  padding: 10rpx;
+  border-radius: 10rpx 0 0 10rpx;
+  justify-content: center;
+  align-items: center
+}
+
+#reportNote .text{
+  font-size:24rpx;
+  color: #FFFFFF;
+}
+
+#reportNote .control{
+  width: 24rpx;  
+  height: 24rpx;
+  padding: 6rpx;
+  margin-right: 4rpx;
+}

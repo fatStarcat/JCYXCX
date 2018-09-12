@@ -1,0 +1,49 @@
+/* pages/newDetails/newDetails.wxss */
+page{
+  background: #FFFFFF;
+}
+.container{
+  padding: 30rpx 30rpx 20rpx;
+  box-sizing: border-box;
+}
+/*新闻标题  */
+.new-title{
+  font-family:PingFang-SC-Bold;
+  font-size: 36rpx;
+  color: #333333;
+  margin-bottom: 30rpx;
+  font-weight: 800;
+}
+/* 信息栏 */
+
+/* 头像 */
+.info-wrap .avatar{
+  width:80rpx;
+  height:80rpx;
+  margin-right:20rpx
+}
+
+.info-wrap .info-detail{
+  display: inline-block;
+  margin-top: 6rpx;
+  vertical-align: top;
+}
+
+.info-detail .info-name{
+  display: block;
+  font-size: 26rpx;
+  color: #595959;
+}
+.info-detail .info-time{
+  display: block;
+  font-size: 22rpx;
+  color: #6F6F6F;
+}
+.info-wrap .news-p{
+  text-indent: 2em;
+  font-size:32rpx;
+  line-height:48rpx;
+  color: #363636;
+  margin-bottom: 30rpx;
+}
+

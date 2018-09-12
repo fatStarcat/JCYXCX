@@ -1,0 +1,47 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/report/report",
+    "pages/reportEntry/reportEntry",
+    "pages/newDetails/newDetails",
+    "pages/knowledge/knowledge",
+    "pages/knowledgeDetails/knowledgeDetails",
+    "pages/reportDetails/reportDetails",
+    "pages/reportNote/reportNote"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#043779",
+    "navigationBarTextStyle":"white",
+    "navigationStyle":"default"
+    
+  },
+  "tabBar":{
+    "list":[
+      {
+        "pagePath": "pages/index/index",
+        "text":"新闻聚合",
+        "iconPath":"images/index/news-icon2.png",
+        "selectedIconPath":"images/index/news-icon.png"
+        
+      },
+      {
+        "pagePath": "pages/knowledge/knowledge",
+        "text": "知识库",
+        "iconPath": "images/index/knowledge-icon2.png",
+        "selectedIconPath": "images/index/knowledge-icon.png"
+      },
+      {
+        "pagePath": "pages/report/report",
+        "text":"我的举报",
+        "iconPath": "images/index/report-icon2.png",
+        "selectedIconPath": "images/index/report-icon.png"
+      }
+    ],
+    "backgroundColor":"#02295C",
+    "color":"#FFFFFF",
+    "selectedColor":"#FFFFFF",
+    "position":"bottom"
+  }
+    
+}

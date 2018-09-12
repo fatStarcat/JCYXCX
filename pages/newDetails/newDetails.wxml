@@ -1,0 +1,16 @@
+<!--pages/newDetails/newDetails.wxml-->
+<view class='container'>
+  <text class='new-title'>{{newDetails.BT}}</text>
+  <view class='info-wrap'>
+    <view style='margin-bottom:20rpx;'>
+      <image class='avatar' src='/images/newDetails/avatar.png'></image>
+      <view class='info-detail'>
+        <text class='info-name'>{{newDetails.LY}}</text>
+        <text class='info-time'>{{newDetails.FBSJ}}</text>
+      </view>
+    </view>
+    <view class='news-p' wx:if="{{item !=''}}" wx:for="{{newDetails.content}}" wx:key="{{index}}">
+      {{item}}
+    </view>
+  </view>
+</view>

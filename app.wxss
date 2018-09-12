@@ -1,0 +1,33 @@
+  /**app.wxss**/
+@import 'weui.wxss';
+page{
+  background: #e8e8e8;
+}
+
+text{
+  display: inline-block;
+}
+
+.container{
+  height: 100%;
+}
+
+.clearfix:after{
+  content:".";
+  clear:both;
+  display:block;
+  height:0;
+  overflow:hidden;
+  visibility:hidden;
+}
+
+.nodata {
+  padding-top: 200rpx;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.nodata image{
+  width: 379rpx;
+  height: 412rpx;
+}

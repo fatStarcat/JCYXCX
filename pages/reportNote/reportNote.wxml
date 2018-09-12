@@ -1,0 +1,24 @@
+<!--pages/reportNote/reportNote.wxml-->
+<view class='container'>
+  <text class='preface'> 公益诉讼案件主要针对五大领域:生态环境和资源保护、食药安全、国有财产保护、国有土地使用权出让、英雄烈士保护等。对五大领域的具体理解如下： </text>
+  <text class='title'>1.污染环境</text>
+  <text class='content'>(1)大气污染:指排放超标的污染颗粒物、二氧化硫、氮氧化物、挥发性有机物等大气污染物或者温室气体等进入大气进而对人体健康、生物、气候产生危害。</text>
+  <text class='content'>(2)水污染:指排放、倾倒未处理或未达标处理的废水、废物，污染地表水或地下水，对灌溉、饮用、养殖等造成损害。</text>
+  <text class='content'>(3)土壤污染:指通过排放污染物，在土地上堆放废弃物或有毒有害物质等方式，造成土壤污染。</text>
+  <text class='content'>(4)固体废物污染:指在生产建设、日常生活和其他活动中产生的污染环境的工业固体废物、城市生活垃圾或危险废物的污染。</text>
+  <text class='title'>2.破坏资源:</text>
+  <text class='content'>是指侵权人通过破坏资源的方式使得生态遭受破坏，损害社会公共利益的案件。破坏生态主要包括人为因素造成的水土流失、土地荒漠化、土地盐碱化、生物多样性减少等类型。</text>
+  <text class='content'>(1)破坏土地资源：主要表现为违反土地利用总体规划擅自将农用地改为建设用地的，擅自在耕地上建房、挖砂、采石、采矿等。</text>
+  <text class='content'>(2)破坏矿产资源类:主要表现为未取得采矿许可证擅自采矿的；超越批准的矿区范围采矿的；采取破坏性的开采方法开采矿产资源的。</text>
+  <text class='content'>(3)破坏林业资源类:主要表现为盗伐森林或者其他林木的；非法开垦、采石、采砂等活动，致使森林、林木受到毁坏的。</text>
+  <text class='content'>(4)破坏草原资源类:主要表现为非法使用草原、非法开垦草原的。</text>
+  <text class='title'>3.食药安全:</text>
+  <text class='content'>普通食品、保健食品、药品、医疗器械的研制、生产、流通、使用等方面国家利益和社会公共利益受到侵害的。</text>
+  <text class='title'>4.国资保护</text>
+  <text class='content'>经营性、行政事业性、税收类、费用类、罚没类、财政补贴类、社会保障类等国有财产受到侵害流失的。</text>
+  <text class='title'>5.国土资源</text>
+  <text class='content'>国有土地使用权出让收入流失、土地闲置、违法使用土地、违法审批等方面国家利益和社会公共利益受到侵害的。</text>
+  <text class='title'>6.英烈保护</text>
+  <text class='content'> 英雄烈士的姓名、身份、名誉、荣誉等方面社会公共利益受到侵害的。</text>
+
+</view>

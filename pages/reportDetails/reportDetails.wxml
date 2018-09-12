@@ -1,0 +1,65 @@
+<!--pages/reportDetails/reportDetails.wxml-->
+<view class='container'>
+
+ <view id='report-form' >
+  <view class='input-group'>
+      <view class='weui-cell__hd'>
+        <label class="weui-label">举报门类:</label>
+      </view>
+      <view class='weui-cell__bd' >
+       <input style='width:100%' disabled='true' class="weui-input" value='{{reportDetails.XSLB}}'>
+      </input>
+    </view>
+ 
+  </view>
+   <view class='input-group'>
+      <view class='weui-cell__hd'>
+        <label class="weui-label">事发地点:</label>
+      </view>
+      <view class="weui-cell__bd ">
+
+        <input class="weui-input" disabled='true' value='{{reportDetails.SFDD}}'/>
+      </view>
+  </view>
+    <view class='input-group'>
+      <view class='weui-cell__hd'>
+        <label class="weui-label" >举报人姓名:</label>
+      </view>
+      <view class="weui-cell__bd ">
+        <input class="weui-input" disabled='true'  value='{{reportDetails.JBRXM}}'/>
+      </view>
+  </view>
+   <view class='input-group'>
+      <view class='weui-cell__hd'>
+        <label class="weui-label">联系方式:</label>
+      </view>
+      <view class="weui-cell__bd ">
+        <input class="weui-input" disabled='true' value='{{reportDetails.JBRLXFS}}'/>
+      </view>
+  </view> 
+  <!--举报内容  -->
+  <view class='report-content'>
+    <view class='title'>举报内容</view>
+     <view >
+     <textarea class='report-text' value='{{reportDetails.JBNR}}'  disabled='true' />
+     </view>
+ 
+  </view>
+  <!--举报材料-->
+  <view class='report-resources clearfix'>
+     <view class='title'>照片/视频</view>
+      <view class='img-video' >
+        
+      <view class='videowrap' wx:for='{{reportDetails.SP}}' wx:key="{{index}}" >
+          <video  class='sendVideo' show-center-play-btn data-index="{{index}}" src='{{item}}'>
+        </video>
+      </view>
+        <view class='imgswrap'  wx:for="{{reportDetails.TP}}" wx:key="{{index}}">
+         <image class='sendImg' catchtap="previewImg" src="{{item}}" data-index="{{index}}" mode="aspectFill" catchtap="previewImg"  ></image> 
+          
+     </view>
+    
+    </view>
+  </view>
+ </view>
+</view>

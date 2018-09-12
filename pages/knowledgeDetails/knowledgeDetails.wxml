@@ -1,0 +1,9 @@
+<view class='container'>
+   <text class='knowledge-title'>{{knowledgeDetails.BT}}</text>
+   <view class='knowledge-info'>
+   <view>来源:<text class='knowledge-source'>{{knowledgeDetails.LY}}</text> </view>
+   <view>时间:<text class='knowledge-time'>{{knowledgeDetails.FBSJ}}</text> </view>
+   </view>
+   <view class='line'></view>
+   <text class='knowledge-content'>{{knowledgeDetails.NR}}</text>
+</view>

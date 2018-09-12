@@ -1,0 +1,90 @@
+/* pages/report/report.wxss */
+
+.container{
+  padding: 20rpx  22rpx;
+  box-sizing: border-box;
+}
+.report-item{
+  position: relative;
+  margin-bottom: 15rpx;
+  background: #FFFFFF;
+  height: 194rpx;
+  border-radius: 10rpx;
+  padding: 30rpx 14rpx 18rpx;
+  box-sizing: border-box;
+  
+}
+.report-type1,
+.report-type2,
+.report-type3,
+.report-type4,
+.report-type5,
+.report-type6{
+  float: left;
+  margin-right: 26rpx;
+  width:120rpx;
+  height:40rpx;
+  border-radius:10px;
+  line-height: 40rpx;
+  text-align: center;
+  font-size: 24rpx;
+  color: #FFFFFF;
+}
+.report-type1{
+    background:#28995b;
+}
+.report-type2{
+    background:#b53837;
+}
+.report-type3{
+    background:#2b59a6;
+}
+.report-type4{
+    background:#ad8829;
+}
+.report-type5{
+    background:#2b59a6;
+}
+.report-type6{
+    background:#808081;
+}
+
+.report-time{
+  float: left;
+  height:40rpx;
+  line-height: 40rpx;
+  font-size: 30rpx;
+  color: #444343;
+}
+
+.report-location{
+   height:40rpx;
+  line-height: 40rpx;
+  padding-left: 30rpx;
+  font-size: 30rpx;
+  color: #0D0101;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  white-space: nowrap;
+}
+.report-location .olabel{
+  display: inline-block;
+}
+
+.report-content{
+  margin-top: 20rpx;
+  font-size: 24rpx;
+  color: #363636;
+  line-height: 36rpx;
+  overflow:hidden;
+  text-overflow:ellipsis;
+  display:-webkit-box;
+  -webkit-box-orient:vertical;
+  -webkit-line-clamp:2;
+}
+
+.report-content .olabel{
+  display: inline-block;
+  font-size: 26rpx;
+  font-weight: 800;
+}

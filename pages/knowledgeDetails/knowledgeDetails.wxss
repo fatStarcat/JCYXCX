@@ -1,0 +1,41 @@
+/* pages/knowledgeDetails/knowledgeDetails.wxss */
+page{
+  background: #FFFFFF;
+}
+.container{
+  padding: 30rpx 30rpx 20rpx;
+  box-sizing: border-box;
+}
+
+.knowledge-title{
+  font-family:PingFang-SC-Bold;
+  font-size: 36rpx;
+  color: #333333;
+  margin-bottom: 20rpx;
+  font-weight: 800;
+}
+.knowledge-info{
+  display: flex;
+  justify-content: space-between;
+  font-size: 30rpx;
+  margin-bottom: 30rpx;
+}
+
+.knowledge-source,
+.knowledge-time{
+  margin-left: 6rpx;
+  color: #555555;
+}
+
+.knowledge-content{
+  font-size:32rpx;
+  color:#333;
+  margin-top:20rpx;
+  white-space: pre-wrap;
+}
+
+
+.line{
+  height: 1px;
+  background: #ccc;
+}

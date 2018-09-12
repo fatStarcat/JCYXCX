@@ -1,0 +1,9 @@
+<!--pages/header/header.wxml-->
+<view class="header">
+  <view class='nav-top'>
+  <view class='return' bindtap='pageReturn' wx:if="{{hasReturn}}">
+    <image src='/images/index/return-icon.png'></image> 
+  </view>
+  <text class='nav-title'>{{headTitle}}</text>
+  </view>
+</view>

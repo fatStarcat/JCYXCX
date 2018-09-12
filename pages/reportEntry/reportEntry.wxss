@@ -1,0 +1,259 @@
+/* pages/reportEntry/reportEntry.wxss */
+
+.container{
+  padding:20rpx 20rpx;
+  box-sizing: border-box;
+}
+#report-form{
+  background: #FFFFFF;
+}
+.weui-cell{
+  padding: 0;
+}
+
+.input-group{
+  position: relative;
+  height: 88rpx;
+  line-height: 88rpx;
+  padding-left: 34rpx;
+  padding-right: 18rpx;
+  display:-webkit-box;
+  display:-webkit-flex;
+  display:flex;
+  -webkit-box-align:center;
+  -webkit-align-items:center;
+  align-items:center;
+  border-bottom: 1px solid #E0E0E0;
+}
+
+.input-group .must{
+  position: absolute;
+  font-size: 30rpx;
+  color: #EB3535;
+  left: 17rpx;
+  top: 0;
+  height: 88rpx;
+  line-height: 104rpx;
+}
+.input-group .weui-label{
+  padding-right: 25rpx;
+  font-family:PingFang-SC-Medium;
+  font-size: 30rpx;
+  color: #434343;
+  line-height: 88rpx;
+}
+
+
+.input-group .weui-cell__bd{
+  position: relative;
+}
+
+.weui-cell__bd .more-icon{
+  position: absolute;
+  width: 32rpx;
+  height: 19rpx;
+  right:-12rpx;
+  top:-6rpx;
+  z-index:100;
+  padding: 30rpx;
+}
+
+.weui-cell__bd .location-icon{
+  position: absolute;
+  padding: 20rpx;
+  width: 24rpx;
+  height: 30rpx;
+  left:-28rpx;
+  top:-1rpx;
+  z-index:100;
+
+}
+.weui-cell__bd .reportNote-icon{
+position: absolute;
+  padding: 15rpx;
+  width: 24rpx;
+  height: 24rpx;
+  left:-28rpx;
+  top:9rpx;
+  z-index:100;
+}
+
+
+.input-group .weui-input{
+  height: 100%;
+  min-height: 100%;
+  line-height: 88rpx;
+  font-size: 24rpx;
+  color: #5E5E5E;
+  margin-top:6rpx;
+}
+
+.report-content{
+  position: relative;
+  padding: 31rpx 17rpx 30rpx;
+   border-bottom: 1px solid #E0E0E0;
+}
+
+.report-content .must{
+  position: absolute;
+  font-size: 30rpx;
+  color: #EB3535;
+  left: 17rpx;
+  top:36rpx;
+  
+}
+
+.report-content .title{
+  padding-right: 25rpx;
+  padding-left: 17rpx;
+  margin-bottom: 30rpx;
+  font-family:PingFang-SC-Medium;
+  font-size: 30rpx;
+  color: #434343;
+}
+
+.report-content .report-text{
+  padding: 16rpx 22rpx;
+  width: 672rpx;
+  height: 248rpx;
+  background: #E9E9E9;
+  font-size: 30rpx;
+  color: #979797;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+
+/* 相机 */
+.report-resources {
+  position: relative;
+  padding: 31rpx 17rpx 30rpx;
+}
+
+.report-resources .title{
+  padding-right: 25rpx;
+  padding-left: 17rpx;
+  margin-bottom: 30rpx;
+  font-family:PingFang-SC-Medium;
+  font-size: 30rpx;
+  color: #434343;
+}
+
+
+.report-resources .camera-right{
+  box-sizing: border-box; 
+}
+ .report-resources .camera-right .imgswrap,
+ .report-resources .camera-right .addImgs{
+  position: relative;
+  display: inline-block;
+  width: calc( 100% / 3);
+  height: 200rpx;
+  line-height: 200rpx;
+  vertical-align:top;
+  box-sizing: border-box;
+  padding: 10rpx;
+ }
+
+
+.report-resources .camera-right .videowrap{
+  position:relative;
+  text-align:center;
+  margin:0 10rpx 30rpx;
+}
+
+
+.report-resources .camera-right .imgswrap .sendImg,
+.report-resources .camera-right .addImgs .add-btn{
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%;
+  border-radius: 10rpx;
+  border: 4rpx solid #ccc;
+}
+
+
+
+.report-resources .camera-right .videowrap .sendVideo{
+   width:100%;
+   height:300rpx;
+}
+/* 图片删除 */
+.imgswrap .delete-btn{
+  position: absolute;
+  bottom:14rpx;
+  left: 14rpx;
+  right: 14rpx;
+  background: #f66;
+  height: 30rpx;
+  text-align: center;
+  line-height: 30rpx;
+}
+
+.imgswrap .delete-btn .delete-icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+/*视频删除 */
+.videowrap .delete-btn{
+  position:absolute;
+  bottom:-24rpx;
+  left:0;
+  background:#f66;
+  height:40rpx;
+  width:100%;
+  text-align:center;
+  line-height:40rpx;
+  border-radius:0 4rpx 4rpx 0;
+}
+
+
+.videowrap .delete-btn .delete-icon{
+  width: 30rpx;
+  height: 30rpx;
+}
+
+.camera-func{
+  padding-top: 20rpx;
+  margin-left: 10rpx;
+  margin-bottom: 10rpx;
+  width:120rpx;
+  height:120rpx;
+  background:rgba(208,206,206,1);
+  border-radius:2rpx;
+  text-align: center;
+  z-index: 999;
+  box-sizing: border-box
+}
+
+.camera-func .camera-icon{
+  width: 58rpx;
+  height: 52rpx;
+}
+
+.camera-func .describe{
+  font-size:16rpx;
+  font-family:PingFang-SC-Medium;
+  color:rgba(151,151,151,1);
+  line-height:0rpx;
+}
+
+
+
+/*发送按钮  */
+#send-btn{
+  height: 98rpx;
+  line-height: 98rpx;
+  border-radius: 0;
+  background: #02295C;
+  color: #FFFFFF;
+  font-size: 30rpx;
+  box-sizing: border-box;
+}
+
+
+#send-btn:active{
+  background:#041e41;
+  z-index: 10000;
+}

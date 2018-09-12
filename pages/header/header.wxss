@@ -1,0 +1,29 @@
+/* pages/header/header.wxss */
+.return{
+  position: relative;
+  display: inline-block;
+  margin-right: 32rpx;
+  width: 23rpx;
+  height: 40rpx;
+  top:-4rpx;
+}
+.return image{
+  vertical-align: middle;
+  width: 23rpx;
+  height: 40rpx;
+}
+.nav-top{
+  height: 12vh;
+  background: #043779;
+  color: #FFFFFF;
+  padding: 0 0 0 23rpx;
+  box-sizing: border-box;
+}
+.nav-title{
+  position: absolute;
+  font-size: 32rpx;
+  letter-spacing: 10rpx;
+  top: 6%;
+}
+
+
